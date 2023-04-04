@@ -1,0 +1,247 @@
+                    body {
+                        text-align: center;
+                        padding-top: 5px;
+                        background-color: white;
+                    }
+                    
+                    nav {
+                        background-color: rgb(61, 61, 61);
+                        overflow: hidden;
+                        display: block;
+                        position: sticky;
+                        top: 0;
+                        width: 100%;
+                        z-index: 1;
+                    }
+                    
+                    nav a {
+                        float: left;
+                        color: whitesmoke;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        font-size: 17px;
+                        height: 3em;
+                    }
+                    
+                    nav input[type=text] {
+                        outline: 3px outset whitesmoke;
+                        margin-top: 10px;
+                        margin-right: 10px;
+                        float: right;
+                    }
+                    
+                    #sbutton {
+                        outline: outset whitesmoke;
+                        margin-top: 10px;
+                        margin-right: 20px;
+                        float: right;
+                    }
+                    
+                    nav a:hover {
+                        background-color: whitesmoke;
+                        color: black;
+                        text-decoration: none;
+                    }
+                    
+                    nav a.active {
+                        color: black;
+                        background-color: rgb(212, 212, 212);
+                        outline: 3px whitesmoke outset;
+                        outline: 3px whitesmoke inset;
+                    }
+                    
+                    .sticky {
+                        position: fixed;
+                        top: 0;
+                        width: 100%;
+                    }
+                    
+                    .sticky.content {
+                        padding-top: 60px;
+                    }
+                    /* Sidenav */
+                    
+                    .sidenav {
+                        height: 100%;
+                        /* Full-height: remove this if you want "auto" height */
+                        width: 160px;
+                        /* Set the width of the sidebar */
+                        position: fixed;
+                        /* Fixed Sidebar (stay in place on scroll) */
+                        z-index: 0;
+                        /* Stay on top */
+                        top: 30;
+                        /* Stay at the top */
+                        left: 0;
+                        background-color: #111;
+                        /* Black */
+                        overflow-x: hidden;
+                        /* Disable horizontal scroll */
+                        padding-top: 10px;
+                    }
+                    /* The navigation menu links */
+                    
+                    .sidenav a {
+                        padding: 8px 8px 6px 16px;
+                        font-size: 20px;
+                        color: #818181;
+                        display: block;
+                    }
+                    /* When you mouse over the navigation links, change their color */
+                    
+                    .sidenav a:hover {
+                        color: #f1f1f1;
+                    }
+                    
+                    .sidenav a.activate {
+                        color: tomato;
+                    }
+                    /* Style page content */
+                    
+                    .main {
+                        margin-left: 160px;
+                        /* Same as the width of the sidebar */
+                        padding: 0px 10px;
+                    }
+                    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+                    
+                    @media screen and (max-height: 450px) {
+                        .sidenav {
+                            padding-top: 15px;
+                        }
+                        .sidenav a {
+                            font-size: 18px;
+                        }
+                    }
+                    /* Contact */
+                    
+                    .contact {
+                        height: 100%;
+                        /* 100% Full-height */
+                        width: 0;
+                        /* 0 width - change this with JavaScript */
+                        position: fixed;
+                        /* Stay in place */
+                        z-index: 1;
+                        /* Stay on top */
+                        top: 0;
+                        /* Stay at the top */
+                        left: 0;
+                        background-color: black;
+                        opacity: 0.9;
+                        /* Black*/
+                        overflow-x: hidden;
+                        /* Disable horizontal scroll */
+                        padding-top: 150px;
+                        /* Place content 60px from the top */
+                        transition: 0.5s;
+                        /* 0.5 second transition effect to slide in the sidenav */
+                    }
+                    
+                    .contact p {
+                        color: #f1f1f1;
+                        font-size: 35px;
+                    }
+                    
+                    .contact a {
+                        text-decoration: none;
+                        color: #f1f1f1;
+                        display: inline;
+                        transition: 0.3s;
+                    }
+                    /* When you mouse over the navigation links, change their color */
+                    
+                    .contact a:hover {
+                        color: #f1f1f1;
+                    }
+                    /* Position and style the close button (top right corner) */
+                    
+                    .contact .closebtn {
+                        position: absolute;
+                        top: 0px;
+                        right: 20px;
+                        font-size: 45px;
+                    }
+                    
+                    .contact .closebtn:hover {
+                        color: tomato;
+                        text-decoration: underline;
+                    }
+                    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+                    
+                    #main {
+                        transition: margin-left .5s;
+                        padding: 20px;
+                    }
+                    /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+                    
+                    @media screen and (max-height: 450px) {
+                        .contact {
+                            padding-top: 15px;
+                        }
+                        .contact a {
+                            font-size: 18px;
+                        }
+                        * {
+                            box-sizing: border-box;
+                        }
+                    }
+                    
+                    .slider {
+                        margin-left: -500px;
+                    }
+                    /* buttons */
+                    
+                    .next {
+                        position: absolute;
+                        margin-left: 260px;
+                        width: 2%;
+                        height: 2%;
+                        color: black;
+                    }
+                    
+                    .prev {
+                        position: absolute;
+                        margin-left: -300px;
+                        width: 2%;
+                        height: 2%;
+                        color: black;
+                    }
+                    
+                    .describeproduct p {
+                        color: black;
+                        font-size: large;
+                        text-align: right
+                    }
+                    
+                    .describeproduct button {
+                        text-align: right;
+                        size: 4px;
+                    }
+                    
+                    .aboutproduct {
+                        text-align: justify;
+                    }
+                    
+                    .listitems {
+                        text-align: justify;
+                        margin-left: 380px;
+                    }
+                    
+                    .color-button {
+                        width: 25px;
+                        height: 25px;
+                        margin: 15px;
+                        display: inline-block;
+                        line-height: 60px;
+                    }
+                    
+                    #camo {
+                        background-image: url("camobg.jpg");
+                    }
+                    
+                    .row {
+                        float: left;
+                        margin-left: 1060px;
+                    }

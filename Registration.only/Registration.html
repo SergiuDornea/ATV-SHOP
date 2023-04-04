@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.Registration.css" type="text/css">
+    <link rel="stylesheet" href="style.contact.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Sing in.ATV-SHOP.RO</title>
+</head>
+
+<body>
+    <nav>
+
+        <div>
+            <a href="index.html"><svg width="3em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
+                <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+              </svg>
+              
+            </a>
+            <a href="Registration.html" class="active">Sing in <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+                <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/></svg> </a>
+            <a href="about.html">About us</a>
+            <a href="#" onclick="openCont()">Contact </a>
+
+            <button type="submit" id="sbutton"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+              </svg></button>
+            <input type="text" placeholder="Search..">
+        </div>
+    </nav>
+    <!-- Contact -->
+    <div id="myContact" class="contact">
+        <div class="overlay-content">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeCont()">&times;</a>
+            <p>Contact Cluj-Napoca:</p>
+            <p>Showroom: Cluj-Napoca, parcare Vivo.</p>
+            <p>Mail:dorneasergiu@gmail.com</p>
+            <p>Phone number:+40752086661</p>
+            <p>For more awesome content, follow us on:</p>
+            <br>
+            <a href="https://www.facebook.com/sergiu.dornea.7" class="fa fa-facebook"></a>
+            <a href="https://www.youtube.com/channel/UC3QNKfNRNyruQ5dUjmZ_02g" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/sergiudornea/?hl=ro" class="fa fa-instagram"></a>
+
+        </div>
+    </div>
+
+    <br>
+    <div class="content">
+        <header>
+            <h1>ATV-SHOP.RO</h1>
+        </header>
+
+        <div class="mainregister">
+            <h2 id="titlul">Registration form</h2>
+            <br>
+            <br>
+            <form>
+                <label class="registcent" for="fname">First name:</label>
+                <input class="registcent" type="text" id="fname" name="fname"><br>
+
+                <label class="registcent" for="lname">Last name:</label>
+                <input class="registcent" type="text" id="lname" name="lname"><br>
+
+                <label class="registcent" for="email">Email:</label>
+                <input class="registcent" type="email" id="email" name="email"><br>
+
+                <label class="registcent" for="password">Password:</label>
+                <input class="registcent" type="password" id="password" name="password"><br>
+
+                <label class="registcent" for="repeat password">Repeat password:</label>
+                <input class="registcent" type="password" id=" repeat password" name="repeat password"><br>
+
+                <label class="registcent" for="birthday">Birthday:</label>
+                <input class="registcent" type="date" id="birthday" name="birthday"> <br>
+
+                <label class="gendr" for="gender">Gender:</label>
+                <input class="gendr" type="radio" id="gender" name="gender" value="male">
+                <label class="gendr" for="male">Male</label>
+                <input class="gendr" type="radio" id="gender" name="gender" value="female">
+                <label class="gendr" for="female">Female</label><br>
+
+            </form>
+            <br>
+            <br>
+            <button type="submit ">Submit</button>
+            <br>
+
+        </div>
+
+        </button>
+
+
+        </form>
+
+
+
+    </div>
+
+    <script src="script.Registration.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-dropdownhover.min.js"></script>
+
+    </div>
+</body>
+
+</html>
+<!-- pt username value="12818s " disabled="true " -->
+
+<!--
+    Pascal case
+    => Josua
+
+    camelCase
+    => josuaBlejeru
+
+    snace_case
+    => josua_blejeru
+
+ -->
