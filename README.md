@@ -1,6 +1,6 @@
-# Market 
+#ATV-SHOP
 
-The best way to learn is  to start doing things. So I started to learn by creating a simple registration form, from then on the project started to get bigger and bigger. 
+The best way to learn is  to start doing things. So I started to learn by creating a simple registration form, from then on the project started to get bigger and bigger.
 
 ![image](https://github.com/SergiuDornea/Market/assets/88648596/69cb13b3-e83c-4ccb-94d5-ca42b0dfbff7)
 
